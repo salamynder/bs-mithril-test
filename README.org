@@ -3,7 +3,7 @@
 Testing Mithril with Bucklescript
 
 * Workflow
-1. write js-ffi and ocaml (bucklescript) code in src/
+1. write js-ffi (in bucklescript) and normal ocaml code in src/
 2. npm run watch runs ninja build tool, compiles src-files to folder lib/js/src
 3. npm run bundle-watch runs webpack via entry lib/js/src/main.js
 
