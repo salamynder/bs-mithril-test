@@ -1,0 +1,27 @@
+{
+  "name": "mithril-buckle-up",
+  "version": "1.0.0",
+  "description": "Testing bucklescript with mithril",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "node_modules/bs-platform/bin/bsb",
+    "watch": "node_modules/bs-platform/bin/bsb -w",
+    "bundle-watch": "webpack -w lib/js/src/main.js dist/bundle.js"
+  },
+  "keywords": [
+    "bucklescript",
+    "mithril",
+    "bindings",
+    "typescript",
+    "convert"
+  ],
+  "author": "rt",
+  "license": "ISC",
+  "dependencies": {
+    "bs-platform": "^1.9.2",
+    "mithril": "^1.1.0",
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {}
+}
