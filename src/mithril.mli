@@ -1,6 +1,6 @@
 type vnode
 (* hyperscript*)
-external h : string -> string -> vnode = "m" [@@bs.module "mithril"]
+external m : string -> string -> vnode = "mithril" [@@bs.module ]
 
 (* closure-component - must be executed *)
 type 'a component = (< view : 'a ; .. > as 'a) Js.t -> vnode
