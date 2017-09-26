@@ -1,3 +1,5 @@
+#+TODO: TODO @WORK | DONE
+
 * Buckle up Mithril!
 
 Testing Mithril with Bucklescript
@@ -14,10 +16,10 @@ Testing Mithril with Bucklescript
 - this object we get when var m = require('mithril')
 - m here is mithrils m-helper which unifies a lot of functionality
 - this not working: external h : string -> string -> vnode = "m" [@@bs.module "mithril"]
-  - solution: leave [@@bs.module] empty, i.e.:
-  - external h : string -> string -> vnode = "mithril" [@@bs.module]
-  - will generate: M("span", v[0])
-** TODO duplicate code in mithril's .ml and .mli files
+  - SOLUTION: leave [@@bs.module] empty, i.e.:
+    - external m : string -> string -> vnode = "mithril" [@@bs.module]
+    - will generate: M("span", v[0])
+** @WORK duplicate code in mithril's .ml and .mli files
 - when removing mli declarations, bsc complaining: unbound symbols
   
 * Reference

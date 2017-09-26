@@ -18,7 +18,7 @@ let cf3 () =
   let v = ref "Hello World" in
   [%bs.obj
       {
-        view   = (fun () -> M.m "span" !v );
+        view   = (fun () -> M.m_ "h1" !v );
         oninit = ""
       }
   ]
